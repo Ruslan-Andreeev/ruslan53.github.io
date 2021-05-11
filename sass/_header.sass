@@ -1,0 +1,118 @@
+.header
+
+    &__top
+        background: #2A2976
+        padding: 9px 0
+        &-content
+            display: flex
+            justify-content: space-between
+            align-items: center
+            span
+                font-weight: 400
+    &__geoposition
+        display: flex
+        align-items: center
+        img
+            margin-right: 10px
+        span
+            font-weight: 400
+    &__logo
+
+    &__bot
+        display: flex
+        justify-content: space-between
+        padding-top: 30px
+        padding-bottom: 30px
+        align-items: center
+    &__list
+        display: flex
+        list-style: none
+        justify-content: center
+
+        li
+            text-decoration: none
+            padding-right: 40px
+            &:last-child
+                padding-right: 0
+
+            a
+                text-decoration: none
+                font-weight: 500
+                font-size: 16px
+                line-height: 19px
+                color: #1F1F1F
+
+                &:hover
+                    color: #EE2C2C
+                    transition: 0.2s
+
+    &__link
+        display: flex
+        flex-direction: column
+        
+    &__phone
+
+        font-size: 18px
+        line-height: 21px
+        color: #1F1F1F
+        font-weight: 700
+        text-decoration: none
+
+    &__mail
+        font-size: 15px
+        line-height: 18px
+        color: #2A2976
+        text-decoration: none
+        padding-left: 5px
+.slide-menu
+    position: relative
+    &::after
+        content: ''
+        background: url('../img/arrow-down.svg')
+        width: 7px
+        height: 6px
+        top: 50%
+        right: 25px
+        position: absolute
+        transform: translateY(-50%)
+
+.menu
+    position: absolute
+    z-index: 100
+    background-color: #FFF
+    top: 17px
+    display: none
+
+    &-flex
+        display: flex
+        padding-left: 50px
+        padding-top: 70px
+        padding-bottom: 20px
+
+    &-wrap
+        margin-right: 40px
+        width: 150px
+        &:last-child
+            margin-right: 0
+
+        span
+            font-size: 20px
+            line-height: 180%
+            color: #2A2976
+            font-weight: 700
+            margin-bottom: 20px
+            display: block
+        ul
+            list-style: none
+
+            li
+
+                font-size: 18px
+                line-height: 180%
+                color: #1F1F1F
+                width: 100%
+                padding: 0
+                a
+                    &:hover
+                        color: #EE2C2C
+                        transition: 0.2s

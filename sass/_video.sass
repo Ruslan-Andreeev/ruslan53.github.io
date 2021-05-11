@@ -1,0 +1,72 @@
+.video
+    margin-bottom: 80px
+    h2
+        font-weight: 700
+        font-size: 36px
+        line-height: 42px
+        color: #1F1F1F
+        margin-bottom: 57px
+    &__content
+        display: flex
+        width: 100%
+        justify-content: space-between
+    &-icon
+        width: 60px
+        height: 60px
+        background: #2A2976
+        display: inline-block
+        margin-right: 20px
+        img
+            width: 100%
+            height: 45px
+            padding-top: 10px
+
+    &__col-30
+        width: 32.5%
+    &__name
+
+        display: inline-block
+        p
+            margin-bottom: 5px
+            font-weight: 500
+            font-size: 18px
+            line-height: 21px
+            color: #1F1F1F
+
+    &__star
+        margin-bottom: 25px
+    &__play,.video__play-one,.video__play-two,.video__play-three
+        position: relative
+        cursor: pointer
+        opacity: 0.9
+        width: 100%
+
+        &:hover
+            opacity: 1
+            transition: 0.3s
+        &::after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background: #1F1F1F
+            opacity: 0.6
+            z-index: 1
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            background: url('../img/play.svg') no-repeat
+
+            z-index: 10
+            width: 50px
+            height: 50px
+        img
+            width: 100%
+            height: 100%
+            display: block
+          
